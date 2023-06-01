@@ -1,13 +1,521 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+@import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  justify-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.navigation ul {
+
+  list-style-type: none;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.navigation ul li a {
+  font: 18px karla;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  background-color: #495E57;
+  z-index: 1;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 80px;
+  padding-top: 80px;
+}
+
+.article-image {
+  width: 377px;
+  height: 406px;
+  border-radius: 30px;
+  position: absolute;
+  margin-bottom: -10px;
+  z-index: 2;
+  bottom: 0%;
+  right: 40px;
+
+
+
+
+}
+
+.article-content {
+  color: white;
+  flex-grow: 1;
+  margin-right: 20%;
+  padding-right: 10%;
+}
+
+.article-content h1 {
+  color: #F4CE14;
+  font: 64px medium Marakazi-text;
+}
+
+.article-content h2 {
+
+  font: 32px medium karla;
+}
+
+.article-content p {
+
+  font: 18px medium karla;
+}
+
+.reserve-button {
+  cursor: pointer;
+  font: 18px medium karla;
+  background-color: #F4CE14;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.dish-card {
+  align-self: start;
+  height: 500px;
+  align-items: center;
+  justify-content: center;
+  display: grid;
+  width: 267px;
+  margin-right: 20px;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  background-color: #EDEFEE;
+  border: 1px solid yellow;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgb(0, 0, 0, 0.9);
+
+}
+
+.dish-card p {
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 20px 20px 20px 20px;
+  color: #495E57;
+}
+
+.dish-image {
+
+  border-radius: 20px 20px 0 0;
+  width: 267px;
+  height: 220px;
+  object-fit: cover;
+}
+
+.dish-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.dish-info h3 {
+
+  font: bold 18px medium Marakazi-text;
+
+}
+
+.price {
+  font: 18px medium Marakazi-text;
+  color: #EE9972;
+}
+
+.order-delivery {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255, 0%, 100%);
+  border: 1px solid black;
+  border-radius: 26px;
+  cursor: pointer;
+
+}
+
+.order-delivery svg {
+  margin-left: 10px;
+}
+.dishes-head{
+  display: grid;
+  margin-top: 90px;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.dishes-head h1{
+  font: 64px medium Marakazi-text;
+}
+.dishes-head button{
+  width: 200px;
+  height: 40px;
+}
+.dishes-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.dish {
+  flex: 0 0 calc(33.33% - 20px);
+  margin: 10px;
+}
+.head-booking {
+  font: 60px oblique ;
+  text-align: center;
+}
+.booking-form{
+  color:#ffffff;
+  padding: 20px;
+  margin-left: 38.5%;
+  display: grid;
+  max-width: 300px;
+   gap: 20px ;
+  justify-items: center;
+   align-items: center;
+  background-color: #495E57;
+  border-top-left-radius: 40px; 
+  border-bottom-right-radius: 40px;
+ font: 18px medium karla;
+
+   
+}
+
+.booking-form label{
+  font: 22px medium karla; ;
+}
+.booking-form input,select,option{
+  font: 18px medium karla;
+  text-align: center;
+  width: 15rem;
+  height: 2rem;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+.booking-form .submit-input{
+  
+  color:black;
+  background-color:#F4CE14;
+  box-shadow: 0 10px 40px rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  width: 13rem;
+  border-radius: 20px;
+  padding: 5px;
+}
+.footer-container {
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  margin-top: 100px;
+  background-color: #495E57; /* Set the background color */
+  color: #fff; /* Set the text color */
+  padding: 20px; /* Add padding for spacing */
+ 
+  /* Add 3D effect */
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container section ul {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Center the ul elements horizontally */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Use flexbox */
+  justify-content: space-evenly; /* Distribute the li elements evenly */
+}
+
+.footer-container section ul li {
+
+  margin: 20px;
+}
+
+.footer-container section ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-container p {
+  color: #F4CE14;
+  margin-top: 20px;
+  text-align: center;
+}
+.error-message{
+  padding-left: 13px;
+  padding-right: 13px;
+  color:white;
+  background-color: red;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+
+}
+.table-details-container { 
+  
+  background-color:#495E57;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+
+}
+.motion{
+  width: 10%;
+  padding:10px;
+
+}
+
+.table-details {
+  background-color:#495E57;
+  width: 50rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.table-info {
+  border:#cfff21  solid 2px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 400;
+  height: 150;
+ font: 20px karla;
+  
+  color: #f1f1ec;
+ font: bold ;
+ text-shadow: 1px 1px 1px black, -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+}
+.table-image{
+  width: 400px;
+  height: 300px;
+ 
+
+}
+.table-location, .table-number{
+padding-top: 20px;
+  width: 400px;
+  height: 50px;
+text-align: center;
+
+}
+.table-info div {
+  font-family: Marakazi-text;
+}
+.restaurant-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.restaurant-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.restaurant-description {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.restaurant-info {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.restaurant-contact {
+  margin-bottom: 5px;
+}
+.star-icon {
+  color: gold;
+  font-size: 18px;
+}
+
+.customer-review {
+  margin-bottom: 20px;
+}
+
+.customer-name {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.rating {
+  margin-bottom: 10px;
+}
+
+.customer-comment {
+  font-size: 16px;
+}
+
+.special-item {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  margin-bottom: 20px;
+}
+
+.dishss-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+
+.dishss-details h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.dishss-details p {
+  font-size: 16px;
+}
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-form {
+  margin-top: 0;
+  position: relative;
+  width: 300px;
+  padding: 20px;
+  background-color: #495E57;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+  animation: movee 5s infinite linear;
+}
+
+@keyframes movee {
+  0% {
+    transform: translate(0px,0px);
+  }
+  50% {
+    transform: translate(0px,50px);
+  }
+  100% {
+    transform: translate(0px,0px);
+  }
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  color:white ;
+}
+
+.login-form label {
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.login-form button {
+ 
+  width: 60%;
+  padding: 8px;
+  margin-left: 19%;
+  background-color:yellow;
+  border: none;
+  color: #000000;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.login-form .error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.cube {
+
+  margin-left: 45%;
+  margin-top: 6%;
+  position: relative;
+  width: 160px;
+  height: 160px;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+.front {
+  background-color: #495E57;
+  transform: translateZ(80px);
+  color: #F4CE14;
+}
+
+.back {
+  background-color:yellow;
+  color: #495E57;
+  transform: rotateY(180deg) translateZ(80px);
+}
+
+.left {
+  background-color: rgb(252, 252, 252);
+  transform: rotateY(-90deg) translateZ(80px);
+}
+
+.right {
+  background-color:#EE9972;
+  transform: rotateY(90deg) translateZ(80px);
+  color: #000000;
+}
+
+.top {
+  background-color: purple;
+  transform: rotateX(90deg) translateZ(80px);
+}
+
+.bottom {
+  background-color: orange;
+  transform: rotateX(-90deg) translateZ(80px);
 }

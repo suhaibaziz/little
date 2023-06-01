@@ -1,15 +1,18 @@
 import React from 'react';
-
+import logo from './Logo .svg';
+import '../index.css'
+import {Link} from'react-router-dom';
 const Nav = () => {
   return (
-    <nav>
+    <nav className='navigation' >
       <ul>
-        <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Menu</a></li>
-        <li><a>Reversations</a></li>
-        <li><a>Order online</a></li>
-        <li><a>Login</a></li>
+      <img src={logo}/>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/Specials">Specials</Link></li>
+        <li><Link to="/CustomersSay">CustomesrSay</Link></li>
+        <li><Link to="/Chicago">Chicago</Link></li>
+        <li><Link to="/Booking">Booking</Link></li>
+        <li><Link to="/Login">Login</Link></li>
       </ul>
     </nav>
   );

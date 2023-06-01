@@ -1,20 +1,20 @@
 import React from 'react';
-
+import '../index.css';
+import {Link} from'react-router-dom';
 const Footer = () => {
   return (
-    <footer>
+    <footer className='footer-container'>
         <section>
             <ul>
-                <li>Doormat Navigation</li>
-                <li><a>Home</a></li>
-        <li><a>About</a></li>
-        <li><a>Menu</a></li>
-        <li><a>Reversations</a></li>
-        <li><a>Order online</a></li>
-        <li><a>Login</a></li>
+            <li><Link to="/">Home</Link></li>
+        <li><Link to="/Specials">Specials</Link></li>
+        <li><Link to="/CustomersSay">CustomesrSay</Link></li>
+        <li><Link to="/Chicago">Chicago</Link></li>
+        <li><Link to="/Booking">Booking</Link></li>
+        <li><Link to="/Logon">Login</Link></li>
             </ul>
         </section>
-      <p>&copy; 2023 My Website. All rights reserved.</p>
+      <p>&copy; 2023 <span style={{color :'white'}}>Eng.Suhaib Abdulaziz</span>. All rights reserved.</p>
     </footer>
   );
 };
