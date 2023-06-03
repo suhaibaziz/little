@@ -6,12 +6,12 @@ const Footer = () => {
     <footer className='footer-container'>
         <section>
             <ul>
-            <li><Link to="/">Home</Link></li>
-        <li><Link to="/Specials">Specials</Link></li>
-        <li><Link to="/CustomersSay">CustomesrSay</Link></li>
-        <li><Link to="/Chicago">Chicago</Link></li>
-        <li><Link to="/Booking">Booking</Link></li>
-        <li><Link to="/Logon">Login</Link></li>
+            <li><Link className='fo' to="/">Home</Link></li>
+        <li><Link className='fo' to="/Specials">Specials</Link></li>
+        <li><Link className='fo' to="/CustomersSay">CustomesrSay</Link></li>
+        <li><Link className='fo' to="/Chicago">Chicago</Link></li>
+        <li><Link className='fo' to="/Booking">Booking</Link></li>
+        <li><Link className='fo' to="/Logon">Login</Link></li>
             </ul>
         </section>
       <p>&copy; 2023 <span style={{color :'white'}}>Eng.Suhaib Abdulaziz</span>. All rights reserved.</p>

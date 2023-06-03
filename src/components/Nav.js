@@ -7,7 +7,10 @@ const Nav = () => {
     <nav className='navigation' >
       <ul>
       <img src={logo}/>
+      <li></li>
+      <li></li>
         <li><Link to="/">Home</Link></li>
+        
         <li><Link to="/Specials">Specials</Link></li>
         <li><Link to="/CustomersSay">CustomesrSay</Link></li>
         <li><Link to="/Chicago">Chicago</Link></li>

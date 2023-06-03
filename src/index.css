@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Markazi+Text:wght@500&display=swap');
 
 .header {
@@ -33,13 +32,13 @@
   z-index: 1;
   padding-left: 10%;
   padding-right: 10%;
-  padding-bottom: 80px;
-  padding-top: 80px;
+  padding-bottom: 10%;
+  padding-top: 10%;
 }
 
 .article-image {
-  width: 377px;
-  height: 406px;
+  width: 25%;
+  height: 30%;
   border-radius: 30px;
   position: absolute;
   margin-bottom: -10px;
@@ -56,7 +55,7 @@
   color: white;
   flex-grow: 1;
   margin-right: 20%;
-  padding-right: 10%;
+  padding-right: 9%;
 }
 
 .article-content h1 {
@@ -153,20 +152,24 @@
 .order-delivery svg {
   margin-left: 10px;
 }
-.dishes-head{
+
+.dishes-head {
   display: grid;
   margin-top: 90px;
   grid-template-columns: 2fr 1fr;
   justify-items: center;
   align-items: center;
 }
-.dishes-head h1{
+
+.dishes-head h1 {
   font: 64px medium Marakazi-text;
 }
-.dishes-head button{
+
+.dishes-head button {
   width: 200px;
   height: 40px;
 }
+
 .dishes-list {
   display: flex;
   flex-wrap: wrap;
@@ -178,31 +181,35 @@
   flex: 0 0 calc(33.33% - 20px);
   margin: 10px;
 }
+
 .head-booking {
-  font: 60px oblique ;
+  font: 60px oblique;
   text-align: center;
 }
-.booking-form{
-  color:#ffffff;
+
+.booking-form {
+  color: #ffffff;
   padding: 20px;
   margin-left: 38.5%;
   display: grid;
   max-width: 300px;
-   gap: 20px ;
+  gap: 20px;
   justify-items: center;
-   align-items: center;
+  align-items: center;
   background-color: #495E57;
-  border-top-left-radius: 40px; 
+  border-top-left-radius: 40px;
   border-bottom-right-radius: 40px;
- font: 18px medium karla;
+  font: 18px medium karla;
 
-   
+
 }
 
-.booking-form label{
-  font: 22px medium karla; ;
+.booking-form label {
+  font: 22px medium karla;
+  ;
 }
-.booking-form input,select,option{
+
+.booking-form input, select, option {
   font: 18px medium karla;
   text-align: center;
   width: 15rem;
@@ -210,38 +217,60 @@
   border-radius: 10px;
   background-color: whitesmoke;
 }
-.booking-form .submit-input{
-  
-  color:black;
-  background-color:#F4CE14;
+
+.booking-form .submit-input {
+
+  color: black;
+  background-color: #F4CE14;
   box-shadow: 0 10px 40px rgba(255, 255, 255, 0.5);
   cursor: pointer;
   width: 13rem;
   border-radius: 20px;
   padding: 5px;
 }
+@media only screen and (max-width: 768px) {
+  .booking-form {
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .booking-form {
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100%;
+  }
+}
 .footer-container {
   width: 100%;
   left: 0;
   bottom: 0;
   margin-top: 100px;
-  background-color: #495E57; /* Set the background color */
-  color: #fff; /* Set the text color */
-  padding: 20px; /* Add padding for spacing */
- 
+  background-color: #495E57;
+  /* Set the background color */
+  color: #fff;
+  /* Set the text color */
+  padding: 20px;
+  /* Add padding for spacing */
+
   /* Add 3D effect */
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .footer-container section ul {
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Center the ul elements horizontally */
+  display: flex;
+  /* Use flexbox */
+  justify-content: center;
+  /* Center the ul elements horizontally */
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Use flexbox */
-  justify-content: space-evenly; /* Distribute the li elements evenly */
+  display: flex;
+  /* Use flexbox */
+  justify-content: space-evenly;
+  /* Distribute the li elements evenly */
 }
 
 .footer-container section ul li {
@@ -259,18 +288,19 @@
   margin-top: 20px;
   text-align: center;
 }
-.error-message{
+
+.error-message {
   padding-left: 13px;
   padding-right: 13px;
-  color:white;
+  color: white;
   background-color: red;
   border-top-right-radius: 50px;
   border-bottom-left-radius: 50px;
 
 }
-.table-details-container { 
-  
-  background-color:#495E57;
+.table-details-container {
+
+  background-color: #495E57;
   margin-bottom: 100px;
   display: flex;
   align-items: center;
@@ -279,14 +309,15 @@
 
 
 }
-.motion{
+
+.motion {
   width: 10%;
-  padding:10px;
+  padding: 10px;
 
 }
 
 .table-details {
-  background-color:#495E57;
+  background-color: #495E57;
   width: 50rem;
   display: flex;
   justify-content: space-between;
@@ -295,33 +326,41 @@
 }
 
 .table-info {
-  border:#cfff21  solid 2px;
+  border: #cfff21 solid 2px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
   width: 400;
   height: 150;
- font: 20px karla;
-  
+  font: 20px karla;
+
   color: #f1f1ec;
- font: bold ;
- text-shadow: 1px 1px 1px black, -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+  font: bold;
+  text-shadow: 1px 1px 1px black, -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
 }
-.table-image{
+
+.table-image {
   width: 400px;
   height: 300px;
- 
+
 
 }
-.table-location, .table-number{
-padding-top: 20px;
+
+.table-location, .table-number {
+  padding-top: 20px;
   width: 400px;
   height: 50px;
-text-align: center;
+  text-align: center;
 
 }
+
 .table-info div {
   font-family: Marakazi-text;
 }
+
+/* Media Queries for responsiveness */
+
+
+
 .restaurant-container {
   max-width: 600px;
   margin: 0 auto;
@@ -349,6 +388,7 @@ text-align: center;
 .restaurant-contact {
   margin-bottom: 5px;
 }
+
 .star-icon {
   color: gold;
   font-size: 18px;
@@ -394,6 +434,7 @@ text-align: center;
 .dishss-details p {
   font-size: 16px;
 }
+
 .login-container {
   display: flex;
   justify-content: center;
@@ -415,19 +456,21 @@ text-align: center;
 
 @keyframes movee {
   0% {
-    transform: translate(0px,0px);
+    transform: translate(0px, 0px);
   }
+
   50% {
-    transform: translate(0px,50px);
+    transform: translate(0px, 50px);
   }
+
   100% {
-    transform: translate(0px,0px);
+    transform: translate(0px, 0px);
   }
 }
 
 .login-form h2 {
   margin-bottom: 20px;
-  color:white ;
+  color: white;
 }
 
 .login-form label {
@@ -448,11 +491,11 @@ text-align: center;
 }
 
 .login-form button {
- 
+
   width: 60%;
   padding: 8px;
   margin-left: 19%;
-  background-color:yellow;
+  background-color: yellow;
   border: none;
   color: #000000;
   border-radius: 4px;
@@ -464,6 +507,7 @@ text-align: center;
   font-size: 12px;
   margin-top: 5px;
 }
+
 .cube {
 
   margin-left: 45%;
@@ -494,7 +538,7 @@ text-align: center;
 }
 
 .back {
-  background-color:yellow;
+  background-color: yellow;
   color: #495E57;
   transform: rotateY(180deg) translateZ(80px);
 }
@@ -505,7 +549,7 @@ text-align: center;
 }
 
 .right {
-  background-color:#EE9972;
+  background-color: #EE9972;
   transform: rotateY(90deg) translateZ(80px);
   color: #000000;
 }
@@ -519,3 +563,531 @@ text-align: center;
   background-color: orange;
   transform: rotateX(-90deg) translateZ(80px);
 }
+
+.burger-menu {
+  display: none;
+  /* hide the burger menu by default */
+  /* Add styling for the burger menu lines */
+}
+
+.menu {
+  /* Add styling for the sidebar menu */
+}
+/* @media(max-width:2150px){
+  .navigation ul {
+    gap: 30px;
+      }
+    
+      .navigation ul li a {
+        font: 25px karla;
+      }
+
+  .article-image{
+    left: 75%;
+    width: 21%;
+    height: 50%;
+    border-radius: 20px;
+    position: absolute;
+    margin-bottom: -10px;
+    z-index: 2;
+    bottom: -2%;
+    right: 10px;
+  
+  
+  }
+  .article-content h1{
+    font-size: 54px;
+  }
+  .article-content h2{
+    font-size: 46px;
+  }
+  .article-content p{
+    font-size: 20px;
+    padding-right: 10px;
+  }
+}
+
+
+@media(max-width:1550px){
+
+  .article-image{
+    width: 28%;
+    height: 50%;
+    border-radius: 20px;
+    position: absolute;
+    margin-bottom: -10px;
+    z-index: 2;
+    bottom: 10%;
+    right: 10px;
+  
+  
+  }
+} */
+
+
+@media(min-width:931px){
+  .navigation ul {
+    gap: 30px;
+      }
+    
+      .navigation ul li a {
+        font: 25px karla;
+      }
+      .article-content h1{
+        font-size: 64px;
+      }
+      .article-content h2{
+        font-size: 46px;
+      }
+      .article-content p{
+        font-size: 30px;
+        padding-right: 10px;
+      }
+    .article{
+      margin-right: -50px;
+    }
+  .article-image{
+
+    width: 24%;
+    height: 50%;
+    border-radius: 20px;
+    position: absolute;
+    margin-bottom: -10px;
+    z-index: 2;
+    bottom: -5%;
+    right: 10px;
+  
+  
+  }
+}
+@media(max-width: 1200px) and (min-width:721px){
+
+ .table-details {
+    width: 100%;
+  }
+.motion{
+  opacity: 50%;
+  padding-bottom: 50px;
+  width: 10%;
+}
+.table-details-container {
+  background-color: #495E57;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping */
+  justify-content: center;
+  align-items: center;
+}
+  .table-info,
+  .table-image,
+  .table-location,
+  .table-number {
+    width: 100%;
+  }
+
+
+}
+@media(max-width:930px){
+  .navigation ul {
+    gap: 12px;
+      }
+    
+      .navigation ul li a {
+        font: 16px karla;
+      }
+  .article{
+    margin-right: -65px;
+    margin-bottom: 200px;
+  }
+  .article-image{
+    left: 75%;
+    width: 30%;
+    height:31%;
+    border-radius: 20px;
+    position: absolute;
+    margin-bottom: -10px;
+    z-index: 2;
+    bottom: 35%;
+    right: 10px;
+  
+  
+  }
+}
+
+@media (max-width: 720px) {
+  .table-details-container {
+    background-color: #495E57;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .motion {
+    width: 10%;
+    padding: 10px;
+  }
+  
+  .table-details {
+    background-color: #495E57;
+    width: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .table-info {
+    border: #cfff21 solid 2px;
+    border-radius: 50px;
+    width: 400px;
+    height: 150px;
+    font: 20px karla;
+    color: #f1f1ec;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black, -1px -1px 1px black, -1px 1px 1px black, 1px -1px 1px black;
+    margin-bottom: 20px;
+  }
+  
+  .table-image {
+    width: 400px;
+    height: 300px;
+    margin-bottom: 20px;
+  }
+  
+  .table-location,
+  .table-number {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+  }
+  .table-details {
+    width: 100%;
+  }
+.motion{
+  width: 10%;
+  opacity: 40%;
+}
+.table-details-container {
+  background-color: #495E57;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap; /* Enable wrapping */
+  justify-content: center;
+  align-items: center;
+}
+  .table-info,
+  .table-image,
+  .table-location,
+  .table-number {
+    width: 100%;
+  }
+
+  .navigation ul {
+gap: 10px;
+  }
+
+  .navigation ul li a {
+    font: 12px karla;
+  }
+  .navigation ul img{
+    width: 100px;
+  }
+  .article {
+    margin-right: -40px;
+    margin-left: -40px;
+  }
+  .article-content h1{
+    font-size: 24px;
+  }
+  .article-content h2{
+    font-size: 16px;
+  }
+  .article-content p{
+    font-size: 11px;
+    padding-right: 10px;
+  }
+  .reserve-button{
+    font-size: 13px;
+  }
+  .article-image{
+    left: 70%;
+    width: 30%;
+    height: 22%;
+    border-radius: 20px;
+    position: absolute;
+    margin-bottom: -10px;
+    z-index: 2;
+    bottom: 60%;
+    right: 10px;
+  
+  
+  }
+  .dishes-head h1{
+    font-size: 20px;
+  }
+  .dishes-head button{
+    width: 100%;
+    height: 30px;
+    
+  }
+  .dish-image {
+
+    border-radius: 20px 20px 0 0;
+    width: 30vw;
+    height: 100px;
+    object-fit: cover;
+  }
+  .dish-card {
+    
+    height: 320px;
+
+    width: 30vw;
+    margin-right: 10px;
+  
+    gap: px;
+   
+  
+  }
+  .dish-card p{
+    font-size: 12px;
+  }
+  .dish-info{
+    justify-content: space-between;
+padding-left: 8px;;
+  }
+.dish-info h3 {
+
+  font: bold 14px medium Marakazi-text;
+
+}
+.order-delivery{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-size: 10px;
+  padding: 4px;
+  background-color: #F4CE14;
+}
+.dishes-list{
+  gap: 10px;
+}
+.footer-container section ul li{
+  margin-left: 5px;
+}
+}
+
+@media(max-width:480px){
+  .navigation ul {
+    gap: 7px;
+      }
+    
+      .navigation ul li a {
+        font: 11px karla;
+
+      }
+      .navigation ul img{
+        width: 65px;
+      }
+      .article {
+        padding-left: 40px;
+        margin-right: -40px;
+        margin-left: -40px;
+      }
+      .article-content h1{
+        font-size: 24px;
+      }
+      .article-content h2{
+        font-size: 16px;
+      }
+      .article-content p{
+        font-size: 10px;
+        padding-right: 15px;
+      }
+      .reserve-button{
+        font-size: 10px;
+      }
+      .article-image{
+        width: 30%;
+        height: 19%;
+        border-radius: 20px;
+        position: absolute;
+        margin-bottom: -10px;
+        z-index: 2;
+        bottom: 54%;
+        right: 10px;
+      
+      
+      }
+      .dishes-head h1{
+        font-size: 20px;
+      }
+      .dishes-head button{
+        width: 100%;
+        height: 30px;
+        
+      }
+      .dish-image {
+    
+        border-radius: 20px 20px 0 0;
+        width: 70vw;
+        height: 100px;
+        object-fit: cover;
+      }
+      .dish-card {
+        
+        height: 280px;
+    
+        width: 70vw;
+        margin-right: 10px;
+      
+       gap:10px;
+      
+      }
+      .dish-card p{
+        font-size: 13px;
+      }
+      .dish-info{
+        justify-content: space-between;
+    padding-left: 8px;;
+      }
+    .dish-info h3 {
+    
+      font: bold 14px medium Marakazi-text;
+    
+    }
+    .order-delivery{
+      margin-top: 5px;
+      margin-bottom: 15px;
+      font-size: 10px;
+      padding: 4px;
+      background-color: #F4CE14;
+    }
+    .dishes-list{
+      gap: 30px;
+      margin-top: 20px;
+    }
+.footer-container p{
+  font-size: 15px;
+}
+    .footer-container .fo{
+      font-size: 10px;
+      
+    }
+    .footer-container section ul li {
+
+      margin-left: -20px;
+    }
+
+
+}
+@media (max-width: 389px) {
+
+  
+  .navigation{
+    margin-left: -65px;
+  }
+    .navigation ul {
+      gap: 7px;
+        }
+      
+        .navigation ul li a {
+          font: 9px karla;
+  
+        }
+        .navigation ul img{
+          width: 60px;
+        }
+        .article {
+          padding-left: 40px;
+          margin-right: -40px;
+          margin-left: -40px;
+        }
+        .article-content h1{
+          font-size: 24px;
+        }
+        .article-content h2{
+          font-size: 16px;
+        }
+        .article-content p{
+          font-size: 10px;
+          padding-right: 15px;
+        }
+        .reserve-button{
+          font-size: 10px;
+        }
+        .article-image{
+          width: 30%;
+          height: 20%;
+          border-radius: 20px;
+          position: absolute;
+          margin-bottom: -10px;
+          z-index: 2;
+          bottom:45%;
+          right: 10px;
+        
+        
+        }
+        .dishes-head h1{
+          font-size: 20px;
+        }
+        .dishes-head button{
+          width: 100%;
+          height: 30px;
+          
+        }
+        .dish-image {
+      
+          border-radius: 20px 20px 0 0;
+          width: 70vw;
+          height: 100px;
+          object-fit: cover;
+        }
+        .dish-card {
+          
+          height: 280px;
+      
+          width: 70vw;
+          margin-right: 10px;
+        
+         gap:10px;
+        
+        }
+        .dish-card p{
+          font-size: 13px;
+        }
+        .dish-info{
+          justify-content: space-between;
+      padding-left: 8px;;
+        }
+      .dish-info h3 {
+      
+        font: bold 14px medium Marakazi-text;
+      
+      }
+      .order-delivery{
+        margin-top: 5px;
+        margin-bottom: 15px;
+        font-size: 10px;
+        padding: 4px;
+        background-color: #F4CE14;
+      }
+      .dishes-list{
+        gap: 10px;
+        margin-top: 20px;
+      }
+  .footer-container p{
+    font-size: 15px;
+  }
+      .footer-container .fo{
+        font-size: 10px;
+        
+      }
+      .footer-container section ul li {
+  
+        margin-left: -20px;
+      }
+  
+  
+  
+  }
